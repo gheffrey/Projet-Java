@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.inscription.controllers.HomeController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="109.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="87.0" layoutX="14.0" layoutY="12.0">
+                     <image>
+                        <Image url="@../img/logo.jpg" />
+                     </image></ImageView>
+                  <Button id="btnMenu" fx:id="btnMenuEtudiant" disable="true" layoutX="122.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleLoadViewEtudiant" prefHeight="27.0" prefWidth="90.0" style="-fx-border-radius: 10px;" text="Etudiants" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="btnMenu" fx:id="btnMenuClasse" layoutX="212.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleLoadViewClasse" prefHeight="27.0" prefWidth="90.0" style="-fx-border-radius: 10px;" text="Classes" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="btnMenu" fx:id="btnMenuProf" disable="true" layoutX="310.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleLoadViewProf" prefHeight="27.0" prefWidth="90.0" style="-fx-border-radius: 10px;" text="Professeurs" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="btnMenu" fx:id="btnMenuInscription" disable="true" layoutX="408.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleLoadViewInscription" prefHeight="27.0" prefWidth="90.0" style="-fx-border-radius: 10px;" text="Inscription" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button id="btnMenu" layoutX="500.0" layoutY="40.0" mnemonicParsing="false" onAction="#handleDeconnexion" prefHeight="27.0" prefWidth="97.0" style="-fx-border-radius: 10px;" text="Déconnexion" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="290.0" prefWidth="600.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="anchorContent" prefHeight="291.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

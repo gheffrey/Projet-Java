@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.inscription.controllers.ClasseController">
+   <children>
+      <BorderPane prefHeight="515.0" prefWidth="721.0" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="533.0" prefWidth="721.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="187.0" layoutY="27.0" text="Libellé">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtLibelle" layoutX="266.0" layoutY="29.0" prefHeight="25.0" prefWidth="188.0" promptText="Ajouter une nouvelle classe" />
+                  <Button id="btnAddClasse" fx:id="btnAddClasse" layoutX="472.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleCreerClasse" prefHeight="30.0" prefWidth="97.0" style="-fx-border-color: white; -fx-border-radius: 10px;" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <TableView fx:id="tblcClasse" layoutX="-5.0" layoutY="79.0" opacity="0.89" prefHeight="439.0" prefWidth="729.0">
+                    <columns>
+                      <TableColumn fx:id="tblcId" prefWidth="138.0" text="ID" />
+                      <TableColumn fx:id="tblcLibelle" prefWidth="588.0" text="Libellé" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

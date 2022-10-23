@@ -1,0 +1,8 @@
+{
+    "sequence":{
+        "etudiant":1
+    },
+    "prefix":{
+        "etudiant":"ETUD_"
+    }
+ }
